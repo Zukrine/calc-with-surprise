@@ -1,0 +1,154 @@
+/* * {
+    margin: 0;
+    box-sizing: content-box;
+} */
+
+body {
+  background: linear-gradient(180deg, #332cff80, #22ff1e6d),
+    url("/src/img/background.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #000000;
+  width: 350px;
+  height: 520px;
+  padding: 50px 20px;
+  margin: 4% auto;
+  margin-left: 37%;
+  border-radius: 10px;
+  box-shadow: 20px 20px 100px rgb(0, 0, 0);
+}
+
+.gift {
+  position: absolute;
+  visibility: hidden;
+  background-color: #cdffe400;
+  min-width: 60%;
+  min-height: 500px;
+  padding: 50px 20px;
+  margin: 4% auto;
+  border-radius: 10px;
+  box-shadow: 20px 20px 100px rgb(0, 0, 0);
+  opacity: 0;
+}
+
+.gift_visible {
+  visibility: visible;
+  margin-left: 70%;
+  transform: translate(-540px, 0);
+  transition: all 4s ease-in-out;
+  opacity: 1;
+}
+
+.message {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.signature {
+  text-align: right;
+}
+
+.open_message {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  font-size: 24px;
+  padding: 0 100px;
+  visibility: visible;
+  transform: scale(1);
+  transition: all 3s ease-in-out;
+  opacity: 1;
+}
+
+.calc_hidden {
+  visibility: hidden;
+  transform: translate(-550px, 0);
+  transition: all 2s ease-in-out;
+  opacity: 0;
+}
+
+.calc_btn_frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 81px;
+  gap: 6px;
+  height: auto;
+  /* margin: 40px auto; */
+  padding-top: 50px;
+}
+
+.calc__screen {
+  grid-column: 1 / -1;
+  background-color: #e4e4e4;
+  margin: -30px 0;
+  padding: 35px;
+  border-radius: 10px;
+  cursor: text;
+  font-size: 50px;
+  text-align: right;
+  overflow: hidden;
+}
+
+.calc_btn {
+  text-align: center;
+  color: #e4e4e4;
+  border-radius: 50%;
+  background-color: #323232;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.calc_btn:hover {
+  background-color: #a5a5a5;
+  color: #1b1b1b;
+}
+
+.calc_btn:active {
+  background-color: #e4e4e4;
+  color: #1b1b1b;
+}
+
+.gray_white {
+  color: #1b1b1b;
+  background-color: #a5a5a5;
+}
+
+.gray_white:hover {
+  background-color: #323232;
+  color: #e4e4e4;
+}
+
+.gray_white:active {
+  background-color: #e4e4e4;
+  color: #1b1b1b;
+}
+
+.orange {
+  background-color: #fe9400;
+}
+
+.orange:hover {
+  background-color: #ffc87c;
+  color: #1b1b1b;
+}
+
+.orange:active {
+  background-color: #e4e4e4;
+  color: #1b1b1b;
+}
+
+.null {
+  grid-column: 1 / -3;
+  border-radius: 50px;
+}
+
+.multiple {
+  padding-top: 16px;
+}
